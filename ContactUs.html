@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERamen</title>
+    <link rel="stylesheet" href="./assets/Style.css" >
+    <link rel="icon" href="./assets/img/ERamenLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src = "./js/Validation.js"></script>
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="navbar">
+            <img class="logo" src="./assets/img/ERamenLogo.png"/>
+
+            <input class="mobileMenu" type="checkbox" id="mobileMenu"/>
+            <label class="hamburger" for="mobileMenu">
+                <div class='ham-button'></div>
+            </label>
+            <div class="hamburgerList">
+                <ul class="page-link">
+                    <li class="link-container home"><a class="link" href="./Home.html">Home</a></li>
+                    <li class="link-container"><a class="link" href="./Product.html">Product</a></li>
+                    <li class="link-container"><a class="link" href="./Promotion.html">Promotion</a></li>
+                    <li class="link-container"><a class="link" href="./AboutUs.html">About Us</a></li>
+                    <li class="origin"><a class="origin" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="main-contactus">
+        <form class="contact-us" id="contact-us" action="./ContactUs.html">
+            <div class="contact-us-title">Contact Us</div>
+
+            <div class="input-name">
+                <label class="text-input" for="names">Full Name</label>
+                <input type="text" placeholder=" " id="names" required>
+            </div>
+
+            <div class="input-email">
+                <label class="text-input" for="emails">Email</label>
+                <input type="text" placeholder=" " id="emails" required>
+            </div>
+
+            <div class="input-phone">
+                <label class="text-input" for="phone">Phone Number</label>
+                <input placeholder=" " id="phone" type="text" patterns="^(\+62|0)8[1-9][0-9]{6,9}$" inputmode="numeric" required>
+            </div>
+
+            <div class="choose-preference">
+                <label>Preference</label>
+                <div class="preference-choice">
+                    <input type="radio" name="preference" id="ramen" value="Ramen" required>
+                    <label class="preference-label" for="ramen">Ramen</label>
+                    <input type="radio" name="preference" id="dry-ramen" value="Dry Ramen" required>
+                    <label class="preference-label" for="dry-ramen">Dry Ramen</label>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label class="newsletter-label" for="newsletter">I agree to receive newsletter</label>
+            </div>
+            
+            <div class="submit-button"><button type="submit">Submit</button></div>
+        </form>
+
+    </div>
+
+    <footer> 
+        <div class="bottom"> 
+            <section class="sosmed">
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/InstagramLogo.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="assets/img/TwitterLogo.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/FacebookLogo.png"></a>
+            </section>
+        </div>
+    </footer>
+
+    <script src = "./js/validation.js"></script>
+</body>
+
+</html>

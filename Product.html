@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERamen</title>
+    <link rel="stylesheet" href="./assets/Style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/ERamenLogo.png">
+    
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="navbar">
+            <img class="logo" src="./assets/img/ERamenLogo.png"/>
+
+            <input class="mobileMenu" type="checkbox" id="mobileMenu"/>
+            <label class="hamburger" for="mobileMenu">
+                <div class='ham-button'></div>
+            </label>
+            <div class="hamburgerList">
+                <ul class="page-link">
+                    <li class="link-container home"><a class="link" href="./Home.html">Home</a></li>
+                    <li class="origin"><a class="origin" href="#" aria-disabled="true">Product</a></li>
+                    <li class="link-container"><a class="link" href="./Promotion.html">Promotion</a></li>
+                    <li class="link-container"><a class="link" href="./AboutUs.html">About Us</a></li>
+                    <li class="link-container"><a class="link" href="./ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="main-product">
+        <div class="product-tabs" role="tablist">
+            <div class="product-tab-labels">
+                <div class="product-label-container" id="product-label-container1">
+                    <label class="product-label" for="product-ramen" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Ramen</label>
+                </div>
+                <div class="product-label-container" id="product-label-container2">
+                    <label class="product-label" for="product-tempura" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Tempura</label>
+                </div>
+            </div>
+            <div class="product-tab">
+                <input type="radio" class="product-switch" name="tabs" id="product-ramen" checked>
+                <div class="product-tab-content" id="product-tab-content1">
+                    <div class="our-menu">OUR MENU</div>
+                    <div class="menu">
+                        <div class="menu-card">
+                            <img class="menu-image" src="./assets/img/PorkKatsu.png" alt="">
+                            <div class="menu-properties">
+                                <p class="menu-name">ERAMEN Signature</p>
+                                <p class="menu-price">Rp 60.000,00</p>
+                                <p class="menu-description">Our signature ramen, with juicy pork tonkatsu and our secret sauce makes the broth have a rich taste and melt in your mouth.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img class="menu-image" src="./assets/img/VegeRamen.png" alt="">
+                            <div class="menu-properties">
+                                <p class="menu-name">Vege Dry Ramen</p>
+                                <p class="menu-price">Rp 40.000,00</p>
+                                <p class="menu-description">Our vegetarian menu, without any beef and broth. With Crisp bean sprouts, thinly sliced bell peppers, and a variety of seasonal greens come together to create a visually appealing and well-balanced composition.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img class="menu-image" src="./assets/img/TonkatsuRamen.png" alt="">
+                            <div class="menu-properties">
+                                <p class="menu-name">Tonkatsu Ramen</p>
+                                <p class="menu-price">Rp 53.000,00</p>
+                                <p class="menu-description">With the tenderness, these fried pork cutlets add a delightful crunch. The vibrant green onions, delicate sheets of nori, and a perfectly soft-boiled egg with a custard-like yolk complete the bowl makes you want it more and more.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img class="menu-image" src="./assets/img/ShoyuRamen.png" alt="">
+                            <div class="menu-properties">
+                                <p class="menu-name">Shoyu Ramen</p>
+                                <p class="menu-price">Rp 43.000,00</p>
+                                <p class="menu-description">Our Shoyu Ramen features a delicate balance of soy sauce-infused broth, tender noodles, and carefully selected toppings. With a perfect al dente texture, the delightful chewiness will complements the flavors of the broth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-tab">
+                <input type="radio" class="product-switch" name="tabs" id="product-tempura">
+                
+
+                <div class="product-tab-content" id="product-tab-content2">
+                    <div class="our-menu">OUR MENU</div>
+                    <div class="menu">
+                        <div class="menu-card">
+                            <img class="menu-image" src="./assets/img/EbiTempura.png" alt="">
+                            <div class="menu-properties">
+                                <p class="menu-name">Ebi Tempura</p>
+                                <p class="menu-price">Rp 45.000,00</p>
+                                <p class="menu-description">Our Ebi Tempura is a culinary masterpiece, featuring succulent shrimp enveloped in a delicate, crispy batter. To enhance the flavor our Ebi tempura is served with a special dipping sauce.</p>
+                            </div>
+                        </div>
+                        <!-- <div class="card-divider"></div> -->
+                        <div class="menu-card">
+                            <img class="menu-image" src="./assets/img/VegeTempura.png" alt="">
+                            <div class="menu-properties">
+                                <p class="menu-name">Vegetable Tempura</p>
+                                <p class="menu-price">Rp 40.000,00</p>
+                                <p class="menu-description">Our Vegetable Tempura showcases a medley of fresh, seasonal vegetables, expertly battered and fried to perfection. With carefully selected vegetables, each showcasing its unique flavor and texture that grace our tempura platter.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img class="menu-image" src="./assets/img/kakiage.png" alt="">
+                            <div class="menu-properties">
+                                <p class="menu-name">Kakiage Tempura</p>
+                                <p class="menu-price">Rp 33.000,00</p>
+                                <p class="menu-description">Our Kakiage Tempura is a symphony of flavors and textures, with fresh and vibrant vegetables such as carrots, onions, sweet potatoes, and zucchini are expertly julienned and delicately intertwined.</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img class="menu-image" src="./assets/img/SweetPotato.png" alt="">
+                            <div class="menu-properties">
+                                <p class="menu-name">Potato Tempura</p>
+                                <p class="menu-price">Rp 42.000,00</p>
+                                <p class="menu-description">The potato slices are gently fried to a golden perfection, achieving a delightful balance between a crispy outer shell and a tender, melt-in-your-mouth interior. Each bite will reveals a harmonious combination of textures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer> 
+        <div class="bottom"> 
+            <section class="sosmed">
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/InstagramLogo.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="assets/img/TwitterLogo.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/FacebookLogo.png"></a>
+            </section>
+        </div>
+    </footer>
+
+    <script src="./js/TabBarBorder.js"></script>
+</body>
+</html>
